@@ -70,10 +70,10 @@ def add_one(num):
 
 # Here are some more expressions:
 
-add_one(2)          # Evaluates to 3
-add_one(3)          # Evaluates to 4
-add_one(4) * 3      # Evaluates to 15
-2 + add_one(4) * 3  # Evaluates to 17
+print(add_one(2))          # Evaluates to 3
+print(add_one(3))          # Evaluates to 4
+print(add_one(4) * 3)      # Evaluates to 15
+print(2 + add_one(4) * 3)  # Evaluates to 17
 
 # What to take from this? Calling a function is also an
 # expression! Many things in Python are expressions, and we
@@ -91,7 +91,7 @@ add_one(4) * 3      # Evaluates to 15
 
 # To finish off, here's a real mind-bender:
 
-add_one(add_one(add_one(add_one(add_one(add_one(1))))))
+print('Nested add one:' + str(add_one(add_one(add_one(add_one(add_one(add_one(1))))))))
 
 # @TASK: What do you think that evaluates to? And why? Give
 # it a go and find out.
